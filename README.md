@@ -6,6 +6,8 @@
 
 ### 약수의 갯수와 덧셈
 
+> https://programmers.co.kr/learn/courses/30/lessons/77884
+
 ```python
 def solution(left, right):
     cal(left)
