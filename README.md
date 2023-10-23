@@ -120,3 +120,20 @@ def solution(s):
             answer.append(-1)
     return answer
 ```
+
+### 핸드폰 번호 가리기
+
+> https://school.programmers.co.kr/learn/courses/30/lessons/12948
+
+```python
+def solution(phone_number):
+    back_bumber = phone_number[-4:]
+    front_number = len(phone_number) - 4
+    front = ""
+    for i in range(front_number):
+        front = front + "*"
+        
+    answer = front + back_bumber
+        
+    return answer
+```
