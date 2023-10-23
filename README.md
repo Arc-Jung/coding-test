@@ -104,3 +104,19 @@ def solution(array, commands):
         
     return answer
 ```
+
+### 가장 가까운 같은 글자
+
+> https://school.programmers.co.kr/learn/courses/30/lessons/142086
+```python
+def solution(s):
+    answer = []
+    for i in range(len(s)):
+        for j in range(i):
+            if s[i] == s[j] and s[i] not in s[j+1:i]:
+                answer.append(i-j)
+                break
+        else:
+            answer.append(-1)
+    return answer
+```
